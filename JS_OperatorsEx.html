@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operators Example</title>
+</head>
+<body>
+    <!--Arithmatic Operators... -->
+    <h2>Javascript Operators</h2>
+    <p id="demo"></p>
+    <script>
+
+    let a=10;
+    let b=20;
+ 
+    let addition=a+b;
+    var sub=a-b;
+    var mul=a*b;
+    var div=a/b;
+    var mod=a%b;
+    var c=a++;
+    var d=++a;
+    var e=3**2;
+
+    document.getElementById("demo").innerHTML=
+    "Add="+addition+"<br>"+
+    "sub="+sub+"<br>"+
+    "Mul="+mul+"<br>"+
+    "div="+div+"<br>"+
+    "mod="+mod+"<br>"+
+    "a++="+c+"<br>"+
+    "++a="+d+"<br>"+
+    "3**2=="+e+"<br>";
+    
+    </script>
+
+    <h2>Assignment Operators</h2>
+    <p id="res"></p>
+    <script>
+        /* Assignment Operators... */
+    let x=10;
+    let y=20;
+
+    x+=y;
+    var add=x;
+    x-=y;
+    var sub=x;
+    x*=y;
+    var mul=x;
+    x/=y;
+    var div=x;
+    x%=y;
+    var mod=x;
+    
+    document.getElementById("res").innerHTML=
+    "Add="+add+"<br>"+
+    "sub="+sub+"<br>"+
+    "mul="+mul+"<br>"+
+    "div="+div+"<br>"+
+    "mod="+mod+"<br>";
+
+    </script>
+
+    <!-- Logical AND Operator -->
+     <h2>Logical Operators</h2>
+     <p id="op"></p>
+     <script>
+        let p=10;
+        let q=20;
+        let and=(p>10 && q<5);
+        let or=(p>5 || q<5);
+        let not=!(p>10);
+
+        document.getElementById("op").innerHTML=
+        "AND="+and+"<br>"+
+        "OR="+or+"<br>"+
+        "NOT="+not+"<br>"
+
+     </script>
+
+    <!-- comparison operators -->
+     <h2>Comparison Operator</h2>
+     <p id="com"></p>
+     <script>
+     let s=5;
+     let res=x>8;
+
+     document.getElementById("com").innerHTML=
+     ""
+     </script>
+
+</body>
+</html>

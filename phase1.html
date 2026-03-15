@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+<h2>CSS Box Model and Layout Properties Demo</h2>
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        background: #b2b2b2;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    nav{
+        background: #555;
+        padding: 10px;
+        display:flex;
+        gap: 20px;
+        
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+    }
+    .container{
+        display:flex;
+        margin: 20px;
+    }
+    article{
+        width: 60%;
+        height: 200px;
+        background: #7fffd4;
+        padding: 20px;
+        border: 3px dashed #000000;
+    }
+    .hiddenbox{
+        visibility:hidden;
+        background: yellow;
+        padding: 10px;
+    }
+    .relative-box{
+        position: relative;
+        background: orange;
+        padding: 10px;
+        
+    }
+    
+    .absolute-box{
+        position:absolute;
+        top:10px;
+        right:10px;
+        background: rebeccapurple;
+        color: aliceblue;
+        padding: 5px;
+    }
+    .fixed-btn{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: blue;
+        color: aliceblue;
+        padding: 10px;
+        z-index: 10;
+    }
+    footer{
+        background: #333;
+        color: wheat;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+</style>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+<article>
+<h3>Article Section</h3>
+<p>
+This box demonstrates the CSS Box Model: content, padding, border, and margin.
+The width and height are fixed. If text becomes larger than the box, overflow:auto
+adds scrolling.
+</p>
+</article>
+
+<aside>
+<h3>Sidebar</h3>
+<p>This sidebar shows padding, border and fixed dimensions.</p>
+
+<div class="hiddenbox">
+This text is hidden using visibility:hidden
+</div>
+
+</aside>
+
+</div>
+
+<div class="relative-box">
+Relative Box
+<div class="absolute-box">Absolute</div>
+</div>
+
+<div class="fixed-btn">
+Help
+</div>
+
+<footer>
+<p>Footer Section</p>
+</footer>
+
+</body>
+</html>
